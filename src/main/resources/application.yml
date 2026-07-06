@@ -1,17 +1,17 @@
 server:
-  port: 8081
+  port: 8085
 
 spring:
   application:
     name: notification-service
 
+  grpc:
+    client:
+      channels:
+        backend:
+          address: localhost:9095
+
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
-      group-id: default-group-id
-      enable-auto-commit: false
       auto-offset-reset: earliest
-
-  liquibase:
-    change-log: classpath:/db/changelog/db.changelog-master.yaml
-    enabled: false

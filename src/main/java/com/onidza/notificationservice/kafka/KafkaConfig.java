@@ -1,5 +1,5 @@
 
-package com.onidza.notificationservice.config;
+package com.onidza.notificationservice.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
